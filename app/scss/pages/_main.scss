@@ -1,0 +1,41 @@
+.header {
+	margin-top: 2rem;
+	h1 {
+		@include playfair-bold;
+		font-size: 4rem;
+	}
+	h2 {
+		@include playfair-bold;
+		font-size: 2rem;
+	}
+}
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: 2rem;
+		background-color: gold;
+		li {
+			flex-basis: 18%;
+			height: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			@include playfair-regular;
+			transition: all 2s ease;
+			&:hover {
+				background-color: orangered;
+			}
+		}
+		.logo {
+		}
+	}
+}
