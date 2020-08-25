@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap');
 
 @mixin playfair-light {
 	font-family: $playfair;
@@ -11,23 +11,23 @@
 }
 @mixin playfair-bold {
 	font-family: $playfair;
-	font-weight: 600;
+	font-weight: 900;
 }
 
 @mixin montserrat-light {
-	font-family: $playfair;
+	font-family: $montserrat;
 	font-weight: 400;
 }
 @mixin montserrat-regular {
-	font-family: $playfair;
+	font-family: $montserrat;
 	font-weight: 500;
 }
 @mixin montserrat-bold {
-	font-family: $playfair;
+	font-family: $montserrat;
 	font-weight: 700;
 }
 @mixin montserrat-extraBold {
-	font-family: $playfair;
+	font-family: $montserrat;
 	font-weight: 800;
 }
 //Breakpoints

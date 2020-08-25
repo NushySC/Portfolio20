@@ -1,18 +1,51 @@
+.hello {
+	background-color: $color-light;
+	color: $color-purply;
+	min-height: 50vh;
+	p {
+		@include playfair-bold;
+		font-size: 20rem;
+		line-height: -3rem;
+		text-align: left;
+		@media screen and (max-width: 768px) {
+			font-size: 15rem;
+		}
+	}
+}
 .header {
-	margin-top: 2rem;
+	background-color: $color-purply;
+	color: $color-pink;
+	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2rem 1rem;
+
 	h1 {
 		@include playfair-bold;
-		font-size: 4rem;
+		font-size: 10rem;
+		line-height: 8.5rem;
+		opacity: 0.8;
+		text-align: right;
+		@media screen and (max-width: 768px) {
+			font-size: 8rem;
+			line-height: 7rem;
+		}
 	}
 	h2 {
-		@include playfair-bold;
-		font-size: 2rem;
+		@include playfair-regular;
+		font-size: 0.6rem;
+		line-height: -3rem;
+		text-align: right;
+		letter-spacing: 0.3rem;
+		margin-top: 0rem;
 	}
 }
 .navbar {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	// mix-blend-mode: difference;
 
 	ul {
 		display: flex;
@@ -20,7 +53,7 @@
 		justify-content: space-between;
 		align-items: center;
 		height: 2rem;
-		background-color: gold;
+
 		li {
 			flex-basis: 18%;
 			height: 100%;
@@ -29,13 +62,71 @@
 			align-items: center;
 			justify-content: center;
 			color: white;
-			@include playfair-regular;
-			transition: all 2s ease;
+			font-size: 0.9rem;
+			@include montserrat-regular;
+
+			transition: all 1.5s ease;
 			&:hover {
-				background-color: orangered;
+				font-size: 1rem;
+				color: $color-purplo;
 			}
 		}
 		.logo {
+			height: 2rem;
+			width: 20%;
 		}
 	}
+}
+.container {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	h3 {
+		@include playfair-bold;
+		//@include montserrat-bold;
+		font-size: 5rem;
+		// position: absolute;
+		// margin-top: -3.5rem;
+	}
+
+	p {
+		@include montserrat-regular;
+		// @include playfair-regular;
+		font-size: 1rem;
+		line-height: 1.9rem;
+		margin: 1rem 0;
+	}
+	.me {
+		border-radius: 50%;
+		filter: grayscale(1);
+	}
+}
+
+.section {
+	min-height: 80vh;
+	margin: 0 auto;
+	padding: 1rem 0;
+
+	&:nth-child(1) {
+		background-color: $color-pink;
+		color: $color-purplo;
+		transition: all 3s ease;
+	}
+	&:nth-child(2) {
+		background-color: $color-purplo;
+		color: $color-pewter;
+	}
+	&:nth-child(3) {
+		background-color: $color-pewter;
+		color: $color-orange;
+	}
+	&:nth-child(4) {
+		background-color: $color-orange;
+		color: $color-blue-steel;
+	}
+}
+
+footer {
+	background-color: $color-purplo;
+	color: $color-pewter;
 }
