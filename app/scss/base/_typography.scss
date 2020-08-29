@@ -3,33 +3,34 @@
 
 @mixin playfair-light {
 	font-family: $playfair;
-	font-weight: 300;
+	font-weight: 400;
 }
 @mixin playfair-regular {
 	font-family: $playfair;
-	font-weight: 400;
+	font-weight: 500;
 }
 @mixin playfair-bold {
 	font-family: $playfair;
-	font-weight: 900;
+	font-weight: 700;
 }
 
+@mixin playfair-extraBold {
+	font-family: $playfair;
+	font-weight: 900;
+}
 @mixin montserrat-light {
 	font-family: $montserrat;
-	font-weight: 400;
+	font-weight: 300;
 }
 @mixin montserrat-regular {
 	font-family: $montserrat;
-	font-weight: 500;
+	font-weight: 400;
 }
 @mixin montserrat-bold {
 	font-family: $montserrat;
-	font-weight: 700;
+	font-weight: 600;
 }
-@mixin montserrat-extraBold {
-	font-family: $montserrat;
-	font-weight: 800;
-}
+
 //Breakpoints
 $bp-xl: 1200px;
 $bp-l: 1024px;

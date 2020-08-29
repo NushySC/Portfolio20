@@ -4,12 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<meta name="description" content="Anuska Sampedro - Porfolio" />
+		<meta
+			name="description"
+			content="Frontend developer: HTML5, CSS3, JavaScript, React, Angular and WordPress. Web design, microsites, online stores and portfolios for entrepreneurs and small businesses."
+		/>
 		<meta
 			name="keywords"
-			content="anuska sampedro, frontend, developer,programadora, diseñadora"
+			content="anuska sampedro, frontend, developer, programadora, diseño, graphic, design"
 		/>
-		<title>Anuska Sampedro - Frontend Developer</title>
+		<title>Anuska Sampedro | Frontend Developer</title>
 		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
 		<link rel="stylesheet" href="./assets/css/styles.min.css" />
@@ -60,13 +63,13 @@
 				src="https://www.googletagmanager.com/ns.html?id=GTM-T6WCPBB"
 				height="0"
 				width="0"
-				style="display: none; visibility: hidden;"
+				style="display: none; visibility: hidden"
 			></iframe
 		></noscript>
 		<!-- End Google Tag Manager (noscript) -->
-		<section class="hello"><p>Hello!</p></section>
+		<!-- <section class="hello"><p>Hello!</p></section> -->
 		<header class="header">
-			<h1 class="name">Anuska <br />Sampedro</h1>
+			<h1 class="name">Anuska Sampedro</h1>
 			<h2 class="webdeveloper">
 				Frontend Developer and Digital Designer
 			</h2>
@@ -82,6 +85,7 @@
 					/></a>
 				</li>
 				<li><a href="#" class="active">Home</a></li>
+				<li><a href="#intro" class="active">Intro</a></li>
 				<li><a href="#skills">Skills</a></li>
 				<li><a href="#portfolio">Portfolio</a></li>
 				<li><a href="#about">About</a></li>
@@ -98,9 +102,9 @@
 			</ul>
 		</nav>
 		<main>
-			<div class="section">
+			<div class="section" id="intro">
 				<div class="container">
-					<h3>Subtitle</h3>
+					<h3>Intro</h3>
 					<p>
 						I would love to help your with your website, feel free
 						to get in touch!
@@ -134,7 +138,7 @@
 				</div>
 			</div>
 
-			<div class="section">
+			<div class="section" id="skills">
 				<div class="container">
 					<h3>My Skills</h3>
 					<div>
@@ -148,8 +152,11 @@
 								similique! Officiis odit quis consequatur
 								ducimus!
 							</p>
-							<div class="row">
+							<div class="row justify-c">
 								<span class="fab fa-html5"></span>
+								<!-- <div class="tooltip">
+									HTML 5 muchos a;os de experiencia
+								</div> -->
 								<span class="fab fa-css3"></span>
 								<span class="fab fa-js"></span>
 								<span class="fab fa-bootstrap"></span>
@@ -169,7 +176,7 @@
 								similique! Officiis odit quis consequatur
 								ducimus!
 							</p>
-							<div class="row">
+							<div class="row justify-c">
 								<span class="fab fa-sketch"></span>
 								<span class="fab fa-adobe"></span>
 							</div>
@@ -185,7 +192,7 @@
 								similique! Officiis odit quis consequatur
 								ducimus!
 							</p>
-							<div class="row">
+							<div class="row justify-c">
 								<span class="fab fa-wordpress"></span>
 								<span class="fab fa-shopify"></span>
 							</div>
@@ -195,7 +202,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="section">
+			<div class="section" id="portfolio">
 				<div class="container">
 					<h3>Portfolio</h3>
 					<div class="portfolio-cont">
@@ -356,7 +363,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="section">
+			<div class="section" id="about">
 				<div class="container">
 					<h3>About</h3>
 					<p>
@@ -390,7 +397,7 @@
 				</div>
 			</div>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="contact">
 			<div class="container">
 				<h3>Get in Touch</h3>
 
@@ -412,7 +419,8 @@
 					<a
 						href="https://www.linkedin.com/in/anuskasampedro/"
 						target="_blank"
-						><i class="fab fa-linkedin-in icon-big"></i
+					>
+						<span class="fab fa-linkedin"></span
 					></a>
 					<a href="https://github.com/NushySC" target="_blank"
 						><i class="fab fa-github icon-big"></i
@@ -427,9 +435,7 @@
 					></a>
 				</div>
 				<div class="content">
-					<p>
-						©2020 by Anuska Sampedro. All rights reserved.
-					</p>
+					<p>©2020 by Anuska Sampedro. All rights reserved.</p>
 				</div>
 			</div>
 		</footer>

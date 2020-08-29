@@ -100,12 +100,50 @@
 		border-radius: 50%;
 		filter: grayscale(1);
 	}
+
+	h4 {
+		@include montserrat-bold;
+		font-size: 1.5rem;
+	}
+}
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.justify-c {
+	justify-content: center;
+	align-items: center;
+}
+.column {
+	display: flex;
+	flex-direction: column;
 }
 
 .section {
 	min-height: 80vh;
 	margin: 0 auto;
 	padding: 1rem 0;
+
+	&.skills {
+		p {
+			font-size: 0.8rem;
+			line-height: 1.3rem;
+		}
+		span {
+			font-size: 3rem;
+			margin: 1.3rem;
+			&:hover {
+				color: $color-light;
+			}
+		}
+
+		.frontend,
+		.ui,
+		.e-commerce {
+			margin: 1.5rem 0;
+		}
+	}
 
 	&:nth-child(1) {
 		background-color: $color-pink;
