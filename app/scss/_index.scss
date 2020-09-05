@@ -1,0 +1,138 @@
+.hello {
+	background-color: $color-light;
+	color: $color-purply;
+	min-height: 50vh;
+	p {
+		@include playfair-bold;
+		font-size: 20rem;
+		line-height: -3rem;
+		text-align: left;
+		@media screen and (max-width: 768px) {
+			font-size: 15rem;
+		}
+	}
+}
+.header {
+	background-color: $color-purply;
+	color: $color-pink;
+	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2rem 1rem;
+
+	h1 {
+		@include playfair-bold;
+		font-size: 10rem;
+		line-height: 8.5rem;
+		opacity: 0.8;
+		text-align: right;
+		@media screen and (max-width: 768px) {
+			font-size: 8rem;
+			line-height: 7rem;
+		}
+
+		span:nth-child(2) {
+			display: block;
+			@include playfair-regular;
+			font-size: 0.6rem;
+			line-height: -3rem;
+			text-align: right;
+			letter-spacing: 0.3rem;
+			margin-top: 0rem;
+		}
+	}
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.section {
+	min-height: 80vh;
+	margin: 0 auto;
+	// padding: 4rem 0;
+
+	&[data-bg='yellow'] {
+		color: #333;
+	}
+	&[data-bg='#ef233c'] {
+		color: $color-pewter;
+	}
+
+	// cambiar esto para que el color de la fuente se cambie a la ve que el fondo
+	span {
+		font-size: 3rem;
+		margin: 1.3rem;
+		&:hover {
+			color: $color-light;
+		}
+		// &.skills {
+		// 	p {
+		// 		font-size: 0.8rem;
+		// 		line-height: 1.3rem;
+		// 	}
+		// }
+
+		.frontend,
+		.ui,
+		.e-commerce {
+			margin: 1.5rem 0;
+		}
+	}
+
+	// &:nth-child(1) {
+	// 	// background-color: $color-pink;
+	// 	color: $color-purplo;
+	// 	// transition: all 3s ease;
+	// }
+	// &:nth-child(2) {
+	// 	// background-color: $color-purplo;
+	// 	color: $color-pewter;
+	// }
+	// &:nth-child(3) {
+	// 	background-color: $color-pewter;
+	// 	color: $color-orange;
+	// }
+	// &:nth-child(4) {
+	// 	background-color: $color-orange;
+	// 	color: $color-blue-steel;
+	// }
+}
+
+footer {
+	background-color: $color-purplo;
+	color: $color-pewter;
+}
+
+.icons-big {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 3rem;
+	a {
+		font-size: 2rem;
+		width: 5rem;
+		transition: all 1s ease;
+		text-align: center;
+		&:hover {
+			font-size: 3rem;
+			width: 5rem;
+		}
+	}
+}
+
+.content {
+	margin: 0 auto;
+	p {
+		font-size: 0.8rem;
+	}
+}

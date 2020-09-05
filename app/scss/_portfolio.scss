@@ -1,16 +1,14 @@
 .portfolio-cont {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto;
-
 	grid-column-gap: 2rem;
 	grid-row-gap: 2rem;
-	margin-bottom: 2rem;
 	padding: 2em 2rem 1em 2em;
 
 	img {
 		height: 20em;
-		width: 15em;
+		width: 17em;
 		object-fit: cover;
 	}
 
