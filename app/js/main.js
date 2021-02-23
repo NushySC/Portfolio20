@@ -14,14 +14,17 @@ window.onscroll = function () {
 // CHANGES BACKGROUND WHEN SCROLLING
 
 window.sections = [...document.querySelectorAll('.section')];
+window.texts = [...document.querySelectorAll('.text')];
+
 window.lastScrollTop = window.pageYOffset;
 
 document.body.style.background = window.sections[0].getAttribute('data-bg');
+document.body.style.color = window.texts[0].getAttribute('data-color');
 
 window.addEventListener('scroll', onScroll);
 
 function onScroll() {
-	const scrollTop = window.pageYOffset;
+	// const scrollTop = window.pageYOffset;
 
 	const section = window.sections
 		.map((section) => {
@@ -29,6 +32,16 @@ function onScroll() {
 			const rect = el.getBoundingClientRect();
 			return {el, rect};
 		})
+
 		.find((section) => section.rect.bottom >= window.innerHeight * 0.5);
 	document.body.style.background = section.el.getAttribute('data-bg');
 }
+
+//Responsive Navbar
+const classToggle = () => {
+	const navs = document.querySelectorAll('.navbar__items');
+
+	navs.forEach((nav) => nav.classList.toggle('navbar__toggleShow'));
+};
+
+document.querySelector('.toggle').addEventListener('click', classToggle);

@@ -1,1 +1,59 @@
-// Scss mixins
+[id^='tooltip-'],
+[id*=' tooltip-'] {
+	position: relative;
+}
+[id^='tooltip-']:hover::after,
+[id*=' tooltip-']:hover::after {
+	position: absolute;
+	top: -2rem;
+	left: 1rem;
+	font-size: 0.8rem;
+	padding: 0.4rem;
+	color: black;
+	background-color: #cfc;
+	z-index: 1;
+}
+
+[id^='tooltip-css']:hover::after,
+[id*=' tooltip-css']:hover::after {
+	content: 'CSS';
+}
+[id^='tooltip-html']:hover::after,
+[id*=' tooltip-html']:hover::after {
+	content: 'HTML';
+}
+
+[id^='tooltip-js']:hover::after,
+[id*=' tooltip-js']:hover::after {
+	content: 'JavaScript';
+}
+
+[id^='tooltip-angular']:hover::after,
+[id*=' tooltip-angular']:hover::after {
+	content: 'Angular';
+}
+
+[id^='tooltip-sass']:hover::after,
+[id*=' tooltip-sass']:hover::after {
+	content: 'Sass';
+}
+
+[id^='tooltip-boot']:hover::after,
+[id*=' tooltip-boot']:hover::after {
+	content: 'Bootstrap';
+}
+
+[id^='tooltip-vue']:hover::after,
+[id*=' tooltip-vue']:hover::after {
+	content: 'Vue';
+}
+
+[id^='tooltip-gulp']:hover::after,
+[id*=' tooltip-gulp']:hover::after {
+	content: 'Gulp';
+}
+
+[id^='tooltip-react']:hover::after,
+[id*=' tooltip-react']:hover::after {
+	content: 'React';
+}

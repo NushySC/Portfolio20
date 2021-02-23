@@ -10,16 +10,13 @@
 		/>
 		<meta
 			name="keywords"
-			content="anuska sampedro, frontend, developer, programadora, diseño, graphic, design"
+			content="anuska sampedro, frontend, developer, ui, designer, programadora, diseño, graphic, design"
 		/>
 		<title>Anuska Sampedro | Frontend Developer</title>
-		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" type="image/jpg" href="./favicon.ico" />
 
 		<link rel="stylesheet" href="./assets/css/styles.min.css" />
-		<script
-			src="https://kit.fontawesome.com/0be298d007.js"
-			crossorigin="anonymous"
-		></script>
+
 		<!-- Google Tag Manager -->
 		<script>
 			(function (w, d, s, l, i) {
@@ -53,7 +50,11 @@
 
 			gtag('config', 'UA-100391460-1');
 		</script>
-		<link rel="icon" type="image/icon type" href="images/ank_red.ico" />
+		<link
+			rel="icon"
+			type="image/icon type"
+			href="./assets/images/ank_red.ico"
+		/>
 	</head>
 
 	<body>
@@ -75,36 +76,40 @@
 			</h1>
 		</header>
 		<nav class="navbar" id="navbar">
-			<ul class="topnav" id="myTopnav">
-				<li>
-					<a href="#"
-						><img
-							src="images/ank.svg"
-							alt="anuska_logo"
-							class="logo"
-					/></a>
+			<a href="#"
+				><img
+					src="./assets/images/ank.svg"
+					alt="anuska_logo"
+					class="logo"
+			/></a>
+
+			<div class="navbar__link toggle">
+				<i class="fas fa-bars"></i>
+			</div>
+
+			<ul class="navbar__items right">
+				<li class="navbar__link">
+					<a href="#intro" class="active">Intro</a>
 				</li>
-				<li><a href="#" class="active">Home</a></li>
-				<li><a href="#intro" class="active">Intro</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#social">Contact</a></li>
-				<!-- <li>
-					<a
-						href="javascript:void(0);"
-						class="icon"
-						onclick="myFunction()"
-					>
-						<i class="fa fa-bars"></i>
-					</a>
-				</li> -->
+				<li class="navbar__link">
+					<a href="#skills">Skills</a>
+				</li>
+				<li class="navbar__link">
+					<a href="#portfolio">Portfolio</a>
+				</li>
+				<li class="navbar__link">
+					<a href="#about">About</a>
+				</li>
+				<li class="navbar__link">
+					<a href="#social">Contact</a>
+				</li>
 			</ul>
 		</nav>
+
 		<main>
-			<div class="section" id="intro" data-bg=" #70b5ba">
+			<div class="section" id="intro" data-bg="#EAAC8B">
 				<div class="container">
-					<h2>Intro</h2>
+					<h2 class="text" data-text="#355070">Intro</h2>
 					<p>
 						I would love to help your with your website, feel free
 						to get in touch!
@@ -138,7 +143,7 @@
 				</div>
 			</div>
 
-			<div class="section" id="skills" data-bg="#ccff00">
+			<div class="section" id="skills" data-bg="#6d597a">
 				<div class="container">
 					<h2>My Skills</h2>
 					<div>
@@ -152,18 +157,40 @@
 								similique! Officiis odit quis consequatur
 								ducimus!
 							</p>
-							<div class="row justify-c">
-								<span class="fab fa-html5"></span>
-								<!-- <div class="tooltip">
-									HTML 5 muchos a;os de experiencia
-								</div> -->
-								<span class="fab fa-css3"></span>
-								<span class="fab fa-js"></span>
-								<span class="fab fa-bootstrap"></span>
-								<span class="fab fa-angular"></span>
-								<span class="fab fa-vuejs"></span>
-								<span class="fab fa-react"></span>
-								<span class="fab fa-sass"></span>
+							<div class="row justify-c skills">
+								<span
+									class="fab fa-html5"
+									id="tooltip-html"
+								></span>
+								<span
+									class="fab fa-css3-alt"
+									id="tooltip-css"
+								></span>
+								<span class="fab fa-js" id="tooltip-js"></span>
+								<span
+									class="fab fa-bootstrap"
+									id="tooltip-boot"
+								></span>
+								<span
+									class="fab fa-angular"
+									id="tooltip-angular"
+								></span>
+								<span
+									class="fab fa-vuejs"
+									id="tooltip-vue"
+								></span>
+								<span
+									class="fab fa-react"
+									id="tooltip-react"
+								></span>
+								<span
+									class="fab fa-sass"
+									id="tooltip-sass"
+								></span>
+								<span
+									class="fab fa-gulp"
+									id="tooltip-gulp"
+								></span>
 							</div>
 						</div>
 						<div class="ui">
@@ -176,9 +203,9 @@
 								similique! Officiis odit quis consequatur
 								ducimus!
 							</p>
-							<div class="row justify-c">
+							<div class="row justify-c skills">
 								<span class="fab fa-sketch"></span>
-								<span class="fab fa-adobe"></span>
+								<span class="fab fa-figma"></span>
 							</div>
 						</div>
 
@@ -192,7 +219,7 @@
 								similique! Officiis odit quis consequatur
 								ducimus!
 							</p>
-							<div class="row justify-c">
+							<div class="row justify-c skills">
 								<span class="fab fa-wordpress"></span>
 								<span class="fab fa-shopify"></span>
 							</div>
@@ -202,15 +229,18 @@
 					</div>
 				</div>
 			</div>
-			<div class="section" id="portfolio" data-bg="#cfa4ad">
+			<div class="section" id="portfolio" data-bg="#355070">
 				<div class="container">
 					<h2>Portfolio</h2>
 					<div class="portfolio-cont">
-						<figure class="imghvr-slide-up">
-							<img src="/img/game_radar.png" alt="game_radar" />
+						<figure class="imghvr-flip-vert">
+							<img
+								src="./assets/images/game_radar.png"
+								alt="game_radar"
+							/>
 							<figcaption>
-								<h4>Game Radar</h4>
-								<h5>PHP, JS, HTML, CSS</h5>
+								<h5>Game Radar</h5>
+								<h6>PHP, JS, HTML, CSS</h6>
 								<p>Final project for Coding Bootcamp Praha.</p>
 								<p>
 									Game Radar is an application that allows
@@ -225,11 +255,14 @@
 							</figcaption>
 						</figure>
 
-						<figure class="imghvr-slide-up">
-							<img src="/img/yoga.png" alt="yoga tours" />
+						<figure class="imghvr-flip-vert">
+							<img
+								src="./assets/images/yoga.png"
+								alt="yoga tours"
+							/>
 							<figcaption>
-								<h4>Yoga Tours</h4>
-								<h5>HTML, CSS</h5>
+								<h5>Yoga Tours</h5>
+								<h6>HTML, CSS</h6>
 								<p>Tours and retreats</p>
 								<a
 									href="https://yogansh.netlify.com/"
@@ -238,11 +271,14 @@
 							</figcaption>
 						</figure>
 
-						<figure class="imghvr-slide-up">
-							<img src="/img/travelsie.png" alt="travelsie" />
+						<figure class="imghvr-flip-vert">
+							<img
+								src="./assets/images/travelsie.png"
+								alt="travelsie"
+							/>
 							<figcaption>
-								<h4>Travelsie</h4>
-								<h5>HTML, CSS</h5>
+								<h5>Travelsie</h5>
+								<h6>HTML, CSS</h6>
 								<p>Hotels website</p>
 								<a
 									href="https://travelsynsh.netlify.com/"
@@ -251,11 +287,14 @@
 							</figcaption>
 						</figure>
 
-						<figure class="imghvr-slide-up">
-							<img src="/img/forky.png" alt="forkify" />
+						<figure class="imghvr-flip-vert">
+							<img
+								src="./assets/images/forky.png"
+								alt="forkify"
+							/>
 							<figcaption>
-								<h4>Forkyfy</h4>
-								<h5>JS, CSS</h5>
+								<h5>Forkyfy</h5>
+								<h6>JS, CSS</h6>
 								<p>Recipes Website</p>
 								<a
 									href="/Websites/forkyfy/index.html"
@@ -264,11 +303,14 @@
 							</figcaption>
 						</figure>
 
-						<figure class="imghvr-slide-up">
-							<img src="/img/museum.png" alt="museumnsh" />
+						<figure class="imghvr-flip-vert">
+							<img
+								src="./assets/images/museum.png"
+								alt="museumnsh"
+							/>
 							<figcaption>
-								<h4>Gallerish</h4>
-								<h5>HTML, CSS</h5>
+								<h5>Gallerish</h5>
+								<h6>HTML, CSS</h6>
 								<p>Museum Website</p>
 								<a
 									href="https://museumnsh.netlify.com/"
@@ -277,14 +319,15 @@
 							</figcaption>
 						</figure>
 
-						<figure class="imghvr-slide-up">
+						<figure class="imghvr-flip-vert">
 							<img
-								src="/img/maimuna.png"
-								alt="bootstrap website"
+								src="./assets/images/maimuna.png"
+								alt="bootstrap
+							website"
 							/>
 							<figcaption>
-								<h4>Maimuna</h4>
-								<h5>HTML, CSS, Bootstrap</h5>
+								<h5>Maimuna</h5>
+								<h6>HTML, CSS, Bootstrap</h6>
 								<a
 									href="/Websites/maimuna/index.html"
 									target="_blank"
@@ -292,14 +335,14 @@
 							</figcaption>
 						</figure>
 
-						<figure class="imghvr-slide-up">
+						<figure class="imghvr-flip-vert">
 							<img
-								src="/img/coffee.png"
+								src="./assets/images/coffee.png"
 								alt="cofee hipster website"
 							/>
 							<figcaption>
-								<h4>Coffee Bar</h4>
-								<h5>HTML, CSS, Bootstrap</h5>
+								<h5>Coffee Bar</h5>
+								<h6>HTML, CSS, Bootstrap</h6>
 								<a
 									href="/Websites/coffee/index.html"
 									target="_blank"
@@ -307,14 +350,14 @@
 							</figcaption>
 						</figure>
 
-						<figure class="imghvr-slide-up">
+						<figure class="imghvr-flip-vert">
 							<img
-								src="/img/Studio_Ghibli.png"
+								src="./assets/images/Studio_Ghibli.png"
 								alt="studio ghibli website"
 							/>
 							<figcaption>
-								<h4>Studio Ghibli Database</h4>
-								<h5>React, CSS</h5>
+								<h5>Studio Ghibli Database</h5>
+								<h6>React, CSS</h6>
 								<a
 									href="/Websites/Studio%20Ghibli/index.html"
 									target="_blank"
@@ -322,11 +365,14 @@
 							</figcaption>
 						</figure>
 
-						<figure class="imghvr-slide-up">
-							<img src="/img/Weather.png" alt="weather app" />
+						<figure class="imghvr-flip-vert">
+							<img
+								src="./assets/images/Weather.png"
+								alt="weather app"
+							/>
 							<figcaption>
-								<h4>Weather App</h4>
-								<h5>React, CSS</h5>
+								<h5>Weather App</h5>
+								<h6>React, CSS</h6>
 								<a
 									href="https://weather-app-anuska.netlify.com/"
 									target="_blank"
@@ -334,14 +380,14 @@
 							</figcaption>
 						</figure>
 
-						<figure class="imghvr-slide-up">
+						<figure class="imghvr-flip-vert">
 							<img
-								src="/img/moliner.png"
+								src="./assets/images/moliner.png"
 								alt="Bootstrap website"
 							/>
 							<figcaption>
-								<h4>Moliner</h4>
-								<h5>HTML, CSS, Bootstrap</h5>
+								<h5>Moliner</h5>
+								<h6>HTML, CSS, Bootstrap</h6>
 								<a
 									href="/Websites/moliner/index.html"
 									target="_blank"
@@ -349,11 +395,14 @@
 							</figcaption>
 						</figure>
 
-						<figure class="imghvr-slide-up">
-							<img src="/img/belfast.png" alt="simple website" />
+						<figure class="imghvr-flip-vert">
+							<img
+								src="./assets/images/belfast.png"
+								alt="simple website"
+							/>
 							<figcaption>
-								<h4>Belfast Kindergarden</h4>
-								<h5>HTML, CSS</h5>
+								<h5>Belfast Kindergarden</h5>
+								<h6>HTML, CSS</h6>
 								<a
 									href="/Websites/Belfast%20Kinderdarden/html/index.html"
 									target="_blank"
@@ -363,7 +412,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="section" id="about" data-bg="#88e0f3">
+			<div class="section" id="about" data-bg="#b56576">
 				<div class="container">
 					<h2>About</h2>
 					<p>
@@ -388,16 +437,16 @@
 						development, I enjoy arts, literature, photography and
 						music, to name a few.
 					</p>
-					<figure class="">
+					<figure class="profile-pic">
 						<img
-							src="./images/anuska_back.jpg"
+							src="./assets/images/anuska_back.jpg"
 							alt="anuska_profile"
 						/>
 					</figure>
 				</div>
 			</div>
 		</main>
-		<footer class="footer" id="contact" data-bg="#ccf8b9">
+		<footer class="footer" id="contact" data-bg="#e56b6f">
 			<div class="container">
 				<h2>Get in Touch</h2>
 
@@ -425,6 +474,10 @@
 					<a href="https://github.com/NushySC" target="_blank"
 						><span class="fab fa-github icon-big"></span
 					></a>
+					<a href="https://codepen.com/NushySC" target="_blank"
+						><span class="fab fa-codepen"></span
+					></a>
+
 					<a href="https://www.behance.net/anksam" target="_blank"
 						><span class="fab fa-behance icon-big"></span
 					></a>
@@ -441,6 +494,10 @@
 		</footer>
 
 		<!-- Scripts -->
+		<script
+			src="https://kit.fontawesome.com/0be298d007.js"
+			crossorigin="anonymous"
+		></script>
 		<script async defer src="assets/js/vendors.min.js?cb=123"></script>
 		<script async defer src="assets/js/app.min.js?cb=123"></script>
 	</body>
