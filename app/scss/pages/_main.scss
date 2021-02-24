@@ -1,24 +1,28 @@
-.hello {
-	background-color: $color-light;
-	color: $color-purply;
-	min-height: 50vh;
-	p {
-		@include text-bold;
-		font-size: 20rem;
-		line-height: -3rem;
-		text-align: left;
-		@media screen and (max-width: 768px) {
-			font-size: 15rem;
-		}
-	}
-}
+// Base styles
 
-//TODO: add gradient or some animation
+html,
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	transition: background 500ms ease-in-out;
+	background-color: #000; /* IE 8 */
+}
+//TODO: change background color for explorer
+//TODO: add gradient or some animation, maybe full gradient because it can interract with showing navbar and full height first frame
 .header {
-	background-color: $color-purply;
+	// background-color: $color-purplo;
 	color: $color-pink;
 	min-height: 50vh;
-	padding: 2rem 1rem;
+	padding: 4rem 2rem;
+	@media screen and (max-width: 768px) {
+		min-height: auto;
+		padding: 4rem 1rem 0rem 1rem;
+	}
 	&__title {
 		display: flex;
 		flex-direction: column;
@@ -29,10 +33,10 @@
 			line-height: 8.5rem;
 			// opacity: 0.8;
 			text-align: right;
-			// @media screen and (max-width: 768px) {
-			// 	font-size: 2rem;
-			// 	line-height: 4rem;
-			// }
+			@media screen and (max-width: 768px) {
+				font-size: 2rem;
+				line-height: 2rem;
+			}
 		}
 		&--sub {
 			@include title-regular;
@@ -40,8 +44,12 @@
 			font-size: 3rem;
 			// line-height: -3rem;
 			text-align: right;
-			letter-spacing: 0.3rem;
-			// margin-top: 0rem;
+			// letter-spacing: 0.3rem;
+			margin-top: 1rem;
+			@media screen and (max-width: 768px) {
+				font-size: 2rem;
+				line-height: 2rem;
+			}
 		}
 	}
 }
@@ -74,10 +82,15 @@
 
 	// cambiar esto para que el color de la fuente se cambie a la ve que el fondo
 	span {
+		height: 4rem;
+		width: 4rem;
 		font-size: 3rem;
 		margin: 1.3rem;
+		transition: all 1s ease;
+		//FIX: transition from top to bottom, why? and fix tooltip position
 		&:hover {
-			color: $color-light;
+			font-size: 4rem;
+			color: $lightpink;
 		}
 		// &.skills {
 		// 	p {

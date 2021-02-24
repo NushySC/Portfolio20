@@ -2,32 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap');
 
 @mixin text-light {
-	font-family: $playfair;
+	font-family: $montserrat;
 	font-weight: 400;
 }
 @mixin text-regular {
-	font-family: $playfair;
+	font-family: $montserrat;
 	font-weight: 500;
 }
 @mixin text-bold {
-	font-family: $playfair;
+	font-family: $montserrat;
 	font-weight: 700;
 }
-
 @mixin text-extraBold {
-	font-family: $playfair;
+	font-family: $montserrat;
 	font-weight: 900;
 }
 @mixin title-light {
-	font-family: $montserrat;
+	font-family: $playfair;
 	font-weight: 300;
 }
 @mixin title-regular {
-	font-family: $montserrat;
+	font-family: $playfair;
 	font-weight: 400;
 }
 @mixin title-bold {
-	font-family: $montserrat;
+	font-family: $playfair;
 	font-weight: 600;
 }
 
