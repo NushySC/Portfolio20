@@ -458,72 +458,70 @@
 
 				<p class="container__text">
 					If you want to get in touch, please use the following form,
-					or the social media link listed below.
+					or the social media links listed below.
 				</p>
 
-				<div class="contact-form">
-					<div id="contact-form">
-						<form
-							id="contact-form-id"
-							class="contact-form-class"
-							method="post"
-							action="./contact-form-process.php"
-						>
-							<div class="contact-form-group">
-								<label for="Name" class="contact-form-label"
-									>Your name</label
-								>
-								<div class="contact-form-input-group">
-									<input
-										type="text"
-										id="Name"
-										name="Name"
-										class="contact-form-control"
-										required
-									/>
-								</div>
-							</div>
-
-							<div class="contact-form-group">
-								<label for="Email" class="contact-form-label"
-									>Your email address</label
-								>
-								<div class="contact-form-input-group">
-									<input
-										type="email"
-										id="Email"
-										name="Email"
-										class="contact-form-control"
-										required
-									/>
-								</div>
-							</div>
-
-							<div class="contact-form-group">
-								<label for="Message" class="contact-form-label"
-									>Your message</label
-								>
-								<div class="contact-form-input-group">
-									<textarea
-										id="Message"
-										name="Message"
-										class="contact-form-control"
-										rows="6"
-										maxlength="3000"
-										required
-									></textarea>
-								</div>
-							</div>
-
-							<button
-								type="submit"
-								id="contact-form-button"
-								class="contact-form-btn"
+				<div class="contact-form" id="contact-form">
+					<form
+						id="contact-form-id"
+						class="contact-form-class"
+						method="post"
+						action="./contact-form-process.php"
+					>
+						<div class="contact-form-group">
+							<label for="Name" class="contact-form-label"
+								>Your name</label
 							>
-								Send Message
-							</button>
-						</form>
-					</div>
+							<div class="contact-form-input-group">
+								<input
+									type="text"
+									id="Name"
+									name="Name"
+									class="contact-form-control"
+									required
+								/>
+							</div>
+						</div>
+
+						<div class="contact-form-group">
+							<label for="Email" class="contact-form-label"
+								>Your email address</label
+							>
+							<div class="contact-form-input-group">
+								<input
+									type="email"
+									id="Email"
+									name="Email"
+									class="contact-form-control"
+									required
+								/>
+							</div>
+						</div>
+
+						<div class="contact-form-group">
+							<label for="Message" class="contact-form-label"
+								>Your message</label
+							>
+							<div class="contact-form-input-group">
+								<textarea
+									id="Message"
+									name="Message"
+									class="contact-form-control"
+									rows="6"
+									maxlength="3000"
+									required
+								></textarea>
+							</div>
+						</div>
+
+						<button
+							type="submit"
+							id="contact-form-button"
+							class="contact-form-btn"
+						>
+							Send Message
+						</button>
+					</form>
 				</div>
 			</div>
 		</section>
