@@ -70,9 +70,11 @@
 		<!-- End Google Tag Manager (noscript) -->
 		<!-- <section class="hello"><p>Hello!</p></section> -->
 		<header class="header">
-			<h1 class="">
-				<span>Anuska Sampedro</span>
-				<span>Frontend Developer and Digital Designer</span>
+			<h1 class="header__title">
+				<span class="header__title--main">Anuska Sampedro</span>
+				<span class="header__title--sub"
+					>Frontend Developer and Digital Designer</span
+				>
 			</h1>
 		</header>
 		<nav class="navbar" id="navbar">
@@ -109,32 +111,32 @@
 		<main>
 			<div class="section" id="intro" data-bg="#EAAC8B">
 				<div class="container">
-					<h2 class="text" data-text="#355070">Intro</h2>
-					<p>
+					<h2 class="container__title" data-text="#355070">Intro</h2>
+					<p class="container__text">
 						I would love to help your with your website, feel free
 						to get in touch!
 					</p>
-					<p>
+					<p class="container__text">
 						My skills are broad: from frontend and backend
 						development to UX and graphic design, I enjoy each
 						aspect, and love building sites & mobile apps from start
 						to finish, for clients all over the world.
 					</p>
-					<p>
+					<p class="container__text">
 						I value simple content structure, clean design patterns,
 						and thoughtful interactions. My approach to website
 						design is to create a website that strengthens your
 						company’s brand while ensuring ease of use and
 						simplicity for your audience.
 					</p>
-					<p>
+					<p class="container__text">
 						I enjoy bringing ideas to life in the browser and
 						combining design and business logic to achieve a
 						user-facing product. To do this successfully, a wide
 						skill set is necessary to produce a quality user
 						experience that leads to meeting business goals.
 					</p>
-					<p>
+					<p class="container__text">
 						While most of my attention is on interactive projects, I
 						do branding and collateral from time to time. This
 						includes logo design, business cards, and other printed
@@ -145,11 +147,11 @@
 
 			<div class="section" id="skills" data-bg="#6d597a">
 				<div class="container">
-					<h2>My Skills</h2>
+					<h2 class="container__title">My Skills</h2>
 					<div>
 						<div class="frontend">
-							<h4>Frontend</h4>
-							<p>
+							<h3 class="skill">Frontend</h3>
+							<p class="container__text">
 								Lorem ipsum dolor, sit amet consectetur
 								adipisicing elit. Odit vitae quibusdam possimus
 								consequatur dicta vel totam voluptate distinctio
@@ -194,8 +196,8 @@
 							</div>
 						</div>
 						<div class="ui">
-							<h4>UI and Design</h4>
-							<p>
+							<h3 class="skill">UI and Design</h3>
+							<p class="container__text">
 								Lorem ipsum dolor, sit amet consectetur
 								adipisicing elit. Odit vitae quibusdam possimus
 								consequatur dicta vel totam voluptate distinctio
@@ -210,8 +212,8 @@
 						</div>
 
 						<div class="e-commerce">
-							<h4>E-commerce</h4>
-							<p>
+							<h3 class="skill">E-commerce</h3>
+							<p class="container__text">
 								Lorem ipsum dolor, sit amet consectetur
 								adipisicing elit. Odit vitae quibusdam possimus
 								consequatur dicta vel totam voluptate distinctio
@@ -231,7 +233,7 @@
 			</div>
 			<div class="section" id="portfolio" data-bg="#355070">
 				<div class="container">
-					<h2>Portfolio</h2>
+					<h2 class="container__title">Portfolio</h2>
 					<div class="portfolio-cont">
 						<figure class="imghvr-flip-vert">
 							<img
@@ -414,15 +416,15 @@
 			</div>
 			<div class="section" id="about" data-bg="#b56576">
 				<div class="container">
-					<h2>About</h2>
-					<p>
+					<h2 class="container__title">About</h2>
+					<p class="container__text">
 						I’m a frontend developer and graphic designer living in
 						Prague with experience in many different areas of web
 						development from frontend engineering to user experience
 						and visual design.
 					</p>
 
-					<p>
+					<p class="container__text">
 						I have worked on several web and print based projects
 						for a range of clients providing design services
 						(Photoshop, Illustrator, InDesign, XD) and web
@@ -430,7 +432,7 @@
 						PHP, WordPress, Bootstrap...).
 					</p>
 
-					<p>
+					<p class="container__text">
 						I’m extremely passionate about web development and
 						design in all forms and I love helping people build and
 						improve their online presence. Aside from web
@@ -446,50 +448,108 @@
 				</div>
 			</div>
 		</main>
-		<footer class="footer" id="contact" data-bg="#e56b6f">
+		<section class="section" id="contact" data-bg="#9b6f">
 			<div class="container">
-				<h2>Get in Touch</h2>
+				<h2 class="container__title">Get in Touch</h2>
 
-				<p>
-					If you want to contact me, please write an email to
-					<a
-						href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%61%6E%75%73%6B%61%40%61%6E%75%73%6B%61%73%61%6D%70%65%64%72%6F%2E%63%6F%6D"
-					>
-						<span
-							class="e-mail"
-							data-user="aksuna"
-							data-website="moc.ordepmasaksuna"
-						></span
-					></a>
-
-					Otherwise, connect through social media.
+				<p class="container__text">
+					If you want to get in touch, please use the following form,
+					or the social media link listed below.
 				</p>
-				<div class="icons-big">
-					<a
-						href="https://www.linkedin.com/in/anuskasampedro/"
-						target="_blank"
-					>
-						<span class="fab fa-linkedin"></span
-					></a>
-					<a href="https://github.com/NushySC" target="_blank"
-						><span class="fab fa-github icon-big"></span
-					></a>
-					<a href="https://codepen.com/NushySC" target="_blank"
-						><span class="fab fa-codepen"></span
-					></a>
 
-					<a href="https://www.behance.net/anksam" target="_blank"
-						><span class="fab fa-behance icon-big"></span
-					></a>
-					<a
-						href="https://www.pinterest.com/anuskasampedro/"
-						target="_blank"
-						><span class="fab fa-pinterest icon-big"></span
-					></a>
+				<div class="contact-form">
+					<div id="contact-form">
+						<form
+							id="contact-form-id"
+							class="contact-form-class"
+							method="post"
+							action="./contact-form-process.php"
+						>
+							<div class="contact-form-group">
+								<label for="Name" class="contact-form-label"
+									>Your name</label
+								>
+								<div class="contact-form-input-group">
+									<input
+										type="text"
+										id="Name"
+										name="Name"
+										class="contact-form-control"
+										required
+									/>
+								</div>
+							</div>
+
+							<div class="contact-form-group">
+								<label for="Email" class="contact-form-label"
+									>Your email address</label
+								>
+								<div class="contact-form-input-group">
+									<input
+										type="email"
+										id="Email"
+										name="Email"
+										class="contact-form-control"
+										required
+									/>
+								</div>
+							</div>
+
+							<div class="contact-form-group">
+								<label for="Message" class="contact-form-label"
+									>Your message</label
+								>
+								<div class="contact-form-input-group">
+									<textarea
+										id="Message"
+										name="Message"
+										class="contact-form-control"
+										rows="6"
+										maxlength="3000"
+										required
+									></textarea>
+								</div>
+							</div>
+
+							<button
+								type="submit"
+								id="contact-form-button"
+								class="contact-form-btn"
+							>
+								Send Message
+							</button>
+						</form>
+					</div>
 				</div>
-				<div class="content">
-					<p>©2020 by Anuska Sampedro. All rights reserved.</p>
-				</div>
+			</div>
+		</section>
+
+		<footer class="section" id="social" data-bg="#96f">
+			<div class="icons-big">
+				<a
+					href="https://www.linkedin.com/in/anuskasampedro/"
+					target="_blank"
+				>
+					<span class="fab fa-linkedin"></span
+				></a>
+				<a href="https://github.com/NushySC" target="_blank"
+					><span class="fab fa-github icon-big"></span
+				></a>
+				<a href="https://codepen.com/NushySC" target="_blank"
+					><span class="fab fa-codepen"></span
+				></a>
+
+				<a href="https://www.behance.net/anksam" target="_blank"
+					><span class="fab fa-behance icon-big"></span
+				></a>
+				<a
+					href="https://www.pinterest.com/anuskasampedro/"
+					target="_blank"
+					><span class="fab fa-pinterest icon-big"></span
+				></a>
+			</div>
+			<div class="copyright">
+				©2020 by Anuska Sampedro. All rights reserved.
 			</div>
 		</footer>
 

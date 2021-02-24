@@ -3,7 +3,7 @@
 	color: $color-purply;
 	min-height: 50vh;
 	p {
-		@include playfair-bold;
+		@include text-bold;
 		font-size: 20rem;
 		line-height: -3rem;
 		text-align: left;
@@ -12,34 +12,36 @@
 		}
 	}
 }
+
+//TODO: add gradient or some animation
 .header {
 	background-color: $color-purply;
 	color: $color-pink;
 	min-height: 50vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	padding: 2rem 1rem;
-
-	h1 {
-		@include playfair-bold;
-		font-size: 10rem;
-		line-height: 8.5rem;
-		opacity: 0.8;
-		text-align: right;
-		@media screen and (max-width: 768px) {
-			font-size: 2rem;
-			line-height: 4rem;
+	&__title {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		&--main {
+			@include title-bold;
+			font-size: 10rem;
+			line-height: 8.5rem;
+			// opacity: 0.8;
+			text-align: right;
+			// @media screen and (max-width: 768px) {
+			// 	font-size: 2rem;
+			// 	line-height: 4rem;
+			// }
 		}
-
-		span:nth-child(2) {
+		&--sub {
+			@include title-regular;
 			display: block;
-			@include playfair-regular;
-			font-size: 0.6rem;
-			line-height: -3rem;
+			font-size: 3rem;
+			// line-height: -3rem;
 			text-align: right;
 			letter-spacing: 0.3rem;
-			margin-top: 0rem;
+			// margin-top: 0rem;
 		}
 	}
 }
@@ -57,9 +59,10 @@
 	flex-wrap: wrap;
 }
 
-.section {
+.section:not(:last-of-type) {
 	min-height: 80vh;
 	margin: 0 auto;
+
 	// padding: 4rem 0;
 
 	&[data-bg='yellow'] {
@@ -112,6 +115,10 @@
 footer {
 	background-color: $color-purplo;
 	color: $color-pink;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
 }
 
 .icons-big {
@@ -121,6 +128,8 @@ footer {
 	justify-content: center;
 	align-items: center;
 	height: 3rem;
+	margin-bottom: 1rem;
+
 	a {
 		font-size: 2rem;
 		width: 5rem;
@@ -133,11 +142,9 @@ footer {
 	}
 }
 
-.content {
-	margin: 0 auto;
-	p {
-		font-size: 0.8rem;
-	}
+.copyright {
+	@include title-regular;
+	font-size: 0.8rem;
 }
 .profile-pic {
 	img {

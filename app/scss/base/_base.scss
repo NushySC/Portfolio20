@@ -1,13 +1,5 @@
 // Base styles
 
-*,
-*::before,
-*::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 html,
 body {
 	-webkit-font-smoothing: antialiased;
@@ -17,5 +9,7 @@ body {
 body {
 	display: flex;
 	flex-direction: column;
-	transition: background 1500ms ease-in-out;
+	transition: background 500ms ease-in-out;
+	background-color: #000; /* IE 8 */
 }
+//TODO: change background color for explorer

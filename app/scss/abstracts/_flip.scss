@@ -1,5 +1,6 @@
 // Scss mixins
 // Default variables
+//TODO: change this colors
 
 $image-bg: #2266a5 !default;
 $figcaption-bg: #135796 !default;
@@ -39,9 +40,9 @@ $shift-distance: 10px !default;
 	}
 
 	figcaption {
+		@include fill;
 		background-color: $figcaption-bg;
 		padding: $figcaption-padding;
-		@include fill;
 		color: $text-color;
 
 		h1,
@@ -197,9 +198,9 @@ $shift-distance: 10px !default;
 	}
 
 	figcaption {
+		@include fill;
 		background-color: $figcaption-bg;
 		padding: $figcaption-padding;
-		@include fill;
 		color: $text-color;
 		font-family: sans-serif;
 

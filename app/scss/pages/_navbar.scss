@@ -5,6 +5,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
+	transition: all 1s ease;
 	z-index: 9999;
 	background-color: tomato;
 	padding: 0.5rem;
@@ -16,7 +17,7 @@
 	}
 
 	&__link {
-		@include montserrat-regular;
+		@include title-bold;
 		margin: 0 0.5rem;
 		color: white;
 		font-size: 0.9rem;

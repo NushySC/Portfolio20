@@ -6,20 +6,21 @@ window.onscroll = function () {
 	if (prevScrollpos > currentScrollPos) {
 		document.getElementById('navbar').style.top = '0';
 	} else {
-		document.getElementById('navbar').style.top = '-50px';
+		document.getElementById('navbar').style.top = '-60px';
 	}
 	prevScrollpos = currentScrollPos;
 };
 
 // CHANGES BACKGROUND WHEN SCROLLING
+//FIX: THE TEXT doest change
 
 window.sections = [...document.querySelectorAll('.section')];
-window.texts = [...document.querySelectorAll('.text')];
+// window.texts = [...document.querySelectorAll('.container__title')];
 
 window.lastScrollTop = window.pageYOffset;
 
 document.body.style.background = window.sections[0].getAttribute('data-bg');
-document.body.style.color = window.texts[0].getAttribute('data-color');
+// document.body.style.color = window.texts[0].getAttribute('data-color');
 
 window.addEventListener('scroll', onScroll);
 

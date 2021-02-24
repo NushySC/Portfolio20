@@ -17,20 +17,22 @@
 		width: 100%;
 	}
 
-	h2 {
-		@include playfair-bold;
+	&__title {
+		@include title-bold;
 		//@include montserrat-bold;
 		font-size: 6rem;
+		line-height: 5.5rem;
 		// position: absolute;
 		// margin-top: -3.5rem;
 		@media screen and (max-width: 500px) {
 			font-size: 4rem;
+			line-height: 3.5rem;
 		}
 	}
 
-	p {
-		@include montserrat-regular;
-		// @include playfair-regular;
+	&__text {
+		@include text-regular;
+		// @include text-regular;
 		font-size: 1.1rem;
 		line-height: 2.2rem;
 		margin: 1rem 0;
@@ -40,8 +42,8 @@
 		filter: grayscale(1);
 	}
 
-	h4 {
-		@include montserrat-bold;
+	.skill {
+		@include title-bold;
 		font-size: 1.7rem;
 		margin-top: 2.5rem;
 	}

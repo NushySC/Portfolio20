@@ -1,0 +1,42 @@
+{
+	"rules": {
+		"declaration-no-important": true,
+		"font-family-no-missing-generic-family-keyword": true,
+		"property-case": "lower",
+		"font-family-no-duplicate-names": true,
+		"declaration-block-no-duplicate-properties": true,
+		"declaration-block-no-shorthand-property-overrides": true,
+		"declaration-block-trailing-semicolon": "always",
+		"keyframe-declaration-no-important": true,
+		"no-extra-semicolons": true,
+		"block-no-empty": true,
+		"no-empty-source": true,
+		"at-rule-no-vendor-prefix": true,
+		"value-no-vendor-prefix": true,
+		"no-missing-end-of-source-newline": true,
+		"font-family-name-quotes": "always-unless-keyword",
+		"selector-id-pattern": "^[a-z][a-zA-Z0-9]*$",
+		"max-line-length": 120,
+		"no-eol-whitespace": true,
+		"declaration-block-no-redundant-longhand-properties": true,
+		"selector-max-compound-selectors": 3,
+		"function-url-no-scheme-relative": true,
+		"max-nesting-depth": [
+			3,
+			{
+				"message": "No more than three nesting levels, how do you ignore ngdeep",
+				"severity": "warning"
+			}
+		],
+		"string-quotes": "single",
+		"block-opening-brace-newline-after": "always",
+		"declaration-block-single-line-max-declarations": 1,
+		"at-rule-no-unknown": true,
+		"property-no-unknown": true,
+		"selector-pseudo-class-no-unknown": true,
+		"selector-pseudo-element-no-unknown": true,
+		"selector-type-no-unknown": true,
+		"function-url-quotes": "always",
+		"color-named": "never"
+	}
+}

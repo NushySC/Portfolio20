@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 html,
 body,
 div,
@@ -109,11 +116,6 @@ section {
 
 body {
 	line-height: 1;
-}
-
-ol,
-ul {
-	list-style: none;
 }
 
 blockquote,
@@ -307,62 +309,6 @@ select {
 }
 
 /**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
- *    Known issue: inner spacing remains in IE 6.
- */
-
-button,
-html input[type="button"], /* 1 */
-input[type="reset"],
-input[type="submit"] {
-	-webkit-appearance: button; /* 2 */
-	cursor: pointer; /* 3 */
-	*overflow: visible; /* 4 */
-}
-
-/**
- * Re-set default cursor for disabled elements.
- */
-
-button[disabled],
-html input[disabled] {
-	cursor: default;
-}
-
-/**
- * 1. Address box sizing set to content-box in IE 8/9.
- * 2. Remove excess padding in IE 8/9.
- * 3. Remove excess padding in IE 7.
- *    Known issue: excess padding remains in IE 6.
- */
-
-input[type='checkbox'],
-input[type='radio'] {
-	box-sizing: border-box; /* 1 */
-	padding: 0; /* 2 */
-	*height: 13px; /* 3 */
-	*width: 13px; /* 3 */
-}
-
-/**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
-
-input[type='search'] {
-	-webkit-appearance: textfield; /* 1 */
-	-moz-box-sizing: content-box;
-	-webkit-box-sizing: content-box; /* 2 */
-	box-sizing: content-box;
-}
-
-/**
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
@@ -401,24 +347,6 @@ table {
 	border-spacing: 0;
 }
 
-html,
-button,
-input,
-select,
-textarea {
-	color: #222;
-}
-
-::-moz-selection {
-	background: #b3d4fc;
-	text-shadow: none;
-}
-
-::selection {
-	background: #b3d4fc;
-	text-shadow: none;
-}
-
 img {
 	vertical-align: middle;
 }
@@ -440,50 +368,6 @@ textarea {
 	padding: 0.2em 0;
 }
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-/* Remove default padding */
-ul[class],
-ol[class] {
-	padding: 0;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-	margin: 0;
-}
-
-/* Set core body defaults */
-body {
-	min-height: 100vh;
-	scroll-behavior: smooth;
-	text-rendering: optimizeSpeed;
-	line-height: 1.5;
-}
-
-/* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
-	list-style: none;
-}
 a {
 	text-decoration: none;
 	color: inherit;
@@ -505,11 +389,6 @@ button {
 	-webkit-appearance: none;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-	text-decoration-skip-ink: auto;
-}
-
 /* Make images easier to work with */
 img {
 	max-width: 100%;
@@ -519,12 +398,4 @@ img {
 /* Natural flow and rhythm in articles by default */
 article > * + * {
 	margin-top: 1em;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-	font: inherit;
 }
