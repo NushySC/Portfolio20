@@ -1,10 +1,35 @@
+//Breakpoints
+$bp-xxl: 1500px;
+$bp-xl: 1200px;
+$bp-l: 1024px;
+$bp-m: 768px;
+$bp-s: 425px;
+$bp-xs: 325px;
+
 // Reusuable classes
 .justify-c {
 	justify-content: center;
 	align-items: center;
 }
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+.skills {
+	flex-wrap: wrap;
+
+	.skills .fab {
+		position: relative;
+		display: inline-block;
+	}
+}
 .container {
-	max-width: 1400px;
+	max-width: 1000px;
 	width: 55%;
 	margin: 4rem auto;
 	padding: 0 1.5rem;
@@ -19,11 +44,8 @@
 
 	&__title {
 		@include title-bold;
-		//@include montserrat-bold;
 		font-size: 6rem;
 		line-height: 5.5rem;
-		// position: absolute;
-		// margin-top: -3.5rem;
 		@media screen and (max-width: 500px) {
 			font-size: 4rem;
 			line-height: 3.5rem;
@@ -32,7 +54,6 @@
 
 	&__text {
 		@include text-regular;
-		// @include text-regular;
 		font-size: 1.1rem;
 		line-height: 2.2rem;
 		margin: 1rem 0;
@@ -43,7 +64,7 @@
 	}
 
 	.skill {
-		@include text-bold;
+		@include text-regular;
 		font-size: 1.7rem;
 		margin-top: 2.5rem;
 	}

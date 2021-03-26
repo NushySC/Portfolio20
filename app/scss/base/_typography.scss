@@ -1,43 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=AbeeZee:wght@300;400;600&display=swap'); Archivo, Asistant, Ballo, BeVietmnam, Biryani, Mulish, Montserrat
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,900;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap');
 
+// Tipografía
+$headlines: 'Playfair Display', serif;
+$texts: 'Poppins', sans-serif;
+
 @mixin text-light {
-	font-family: $montserrat;
-	font-weight: 400;
+	font-family: $texts;
+	font-weight: 200;
 }
 @mixin text-regular {
-	font-family: $montserrat;
+	font-family: $texts;
 	font-weight: 500;
 }
 @mixin text-bold {
-	font-family: $montserrat;
+	font-family: $texts;
 	font-weight: 700;
 }
 @mixin text-extraBold {
-	font-family: $montserrat;
+	font-family: $texts;
 	font-weight: 900;
 }
 @mixin title-light {
-	font-family: $playfair;
-	font-weight: 300;
-}
-@mixin title-regular {
-	font-family: $playfair;
+	font-family: $headlines;
 	font-weight: 400;
 }
-@mixin title-bold {
-	font-family: $playfair;
-	font-weight: 600;
+@mixin title-regular {
+	font-family: $headlines;
+	font-weight: 500;
 }
-
-//Breakpoints
-$bp-xxl: 1500px;
-$bp-xl: 1200px;
-$bp-l: 1024px;
-$bp-m: 768px;
-$bp-s: 425px;
-$bp-xs: 325px;
-
-// Tipografía
-$playfair: 'Playfair Display', serif;
-$montserrat: 'Montserrat', sans-serif;
+@mixin title-bold {
+	font-family: $headlines;
+	font-weight: 900;
+}
