@@ -1,10 +1,10 @@
-[id^='tooltip-'],
-[id*=' tooltip-'] {
+[class^='tooltip-'],
+[class*=' tooltip-'] {
 	position: absolute;
 }
 
-[id^='tooltip-']:hover::after,
-[id*=' tooltip-']:hover::after {
+[class^='tooltip-']:hover::after,
+[class*=' tooltip-']:hover::after {
 	position: absolute;
 	font-size: 0.6rem;
 	transform: translateY(-130%) translateX(5%);
@@ -15,7 +15,6 @@
 	background-color: #ccffcc;
 	border-radius: 4px;
 	z-index: 1;
-	animation: showTool 2s 3s;
 }
 
 //TODO: change color tooltip and font
@@ -37,7 +36,7 @@ $content: (
 );
 
 @each $name, $value in $content {
-	#tooltip-#{$name}:hover::after {
+	.tooltip-#{$name}:hover::after {
 		content: $value;
 	}
 }

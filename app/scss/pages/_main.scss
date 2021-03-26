@@ -1,10 +1,12 @@
 // Base styles
 
+html {
+	scroll-behavior: smooth;
+}
 html,
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	scroll-behavior: smooth;
 }
 body {
 	display: flex;
@@ -16,7 +18,8 @@ body {
 //TODO: add gradient or some animation, maybe full gradient because it can interract with showing navbar and full height first frame
 .header {
 	// background-color: $color-purplo;
-	color: $color-pink;
+	color: $color-white;
+	background-color: cornflowerblue;
 	min-height: 50vh;
 	padding: 4rem 2rem;
 	@media screen and (max-width: 768px) {
@@ -54,47 +57,35 @@ body {
 	}
 }
 
-.row {
-	display: flex;
-	flex-direction: row;
+.skills .fab {
+	position: relative;
+	display: inline-block;
 }
-
-.column {
-	display: flex;
-	flex-direction: column;
+.section {
+	// color: $darkpurple;
 }
-.skills {
-	flex-wrap: wrap;
-
-	.fab {
-		position: relative;
-		display: inline-block;
-	}
-}
-
 .section:not(:last-of-type) {
 	min-height: 80vh;
 	margin: 0 auto;
 
 	// padding: 4rem 0;
 
-	&[data-bg='yellow'] {
-		color: #333;
-	}
-	&[data-bg='#ef233c'] {
-		color: $color-purplo;
-	}
+	// &[data-bg='yellow'] {
+	// 	color: #333;
+	// }
+	// &[data-bg='#ef233c'] {
+	// 	color: $color-purplo;
+	// }
 
 	// cambiar esto para que el color de la fuente se cambie a la ve que el fondo
 	.fab {
 		height: 4rem;
 		width: 4rem;
-		font-size: 3rem;
+		font-size: 3.5rem;
 		margin: 1.3rem;
-		transition: all 1s ease;
-		//FIX: transition from top to bottom, why? and fix tooltip position
+		transition: all 2s ease;
 		&:hover {
-			transform: scale(1.2);
+			// transform: scale(1.2);
 			color: $lightpink;
 		}
 
@@ -183,8 +174,11 @@ footer {
 	font-size: 0.8rem;
 }
 .profile-pic {
-	img {
+	&__img {
 		border-radius: 50%;
 		box-shadow: 3px 2px 15px 0px rgba(0, 0, 0, 0.54);
+		@media screen and (max-width: $bp-l) {
+			margin: 0 auto;
+		}
 	}
 }
