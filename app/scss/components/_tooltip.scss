@@ -19,46 +19,25 @@
 }
 
 //TODO: change color tooltip and font
-[id^='tooltip-css']:hover::after,
-[id*=' tooltip-css']:hover::after {
-	content: 'CSS';
-}
-[id^='tooltip-html']:hover::after,
-[id*=' tooltip-html']:hover::after {
-	content: 'HTML';
-}
 
-[id^='tooltip-js']:hover::after,
-[id*=' tooltip-js']:hover::after {
-	content: 'JavaScript';
-}
+$content: (
+	'html': 'HTML5',
+	'css': 'CSS3',
+	'js': 'JavaScript',
+	'sketch': 'Sketch',
+	'react': 'React',
+	'figma': 'Figma',
+	'gulp': 'Gulp',
+	'vue': 'Vue',
+	'boot': 'Bootstrap',
+	'sass': 'Sass',
+	'angular': 'Angular',
+	'shopify': 'Shopify',
+	'wordpress': 'Wordpress',
+);
 
-[id^='tooltip-angular']:hover::after,
-[id*=' tooltip-angular']:hover::after {
-	content: 'Angular';
-}
-
-[id^='tooltip-sass']:hover::after,
-[id*=' tooltip-sass']:hover::after {
-	content: 'Sass';
-}
-
-[id^='tooltip-boot']:hover::after,
-[id*=' tooltip-boot']:hover::after {
-	content: 'Bootstrap';
-}
-
-[id^='tooltip-vue']:hover::after,
-[id*=' tooltip-vue']:hover::after {
-	content: 'Vue';
-}
-
-[id^='tooltip-gulp']:hover::after,
-[id*=' tooltip-gulp']:hover::after {
-	content: 'Gulp';
-}
-
-[id^='tooltip-react']:hover::after,
-[id*=' tooltip-react']:hover::after {
-	content: 'React';
+@each $name, $value in $content {
+	#tooltip-#{$name}:hover::after {
+		content: $value;
+	}
 }
