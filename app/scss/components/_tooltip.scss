@@ -1,17 +1,21 @@
 [id^='tooltip-'],
 [id*=' tooltip-'] {
-	position: relative;
+	position: absolute;
 }
+
 [id^='tooltip-']:hover::after,
 [id*=' tooltip-']:hover::after {
 	position: absolute;
-	top: -2rem;
-	left: 1rem;
-	font-size: 0.8rem;
+	font-size: 0.6rem;
+	transform: translateY(-130%) translateX(5%);
 	padding: 0.4rem;
 	color: #000000;
+	font-family: sans-serif;
+	font-weight: bold;
 	background-color: #ccffcc;
+	border-radius: 4px;
 	z-index: 1;
+	animation: showTool 2s 3s;
 }
 
 //TODO: change color tooltip and font

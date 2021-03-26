@@ -1,8 +1,8 @@
 <?php
 if (isset($_POST['Email'])) {
 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
-
+    //TODO: and email
+    $email_to = "";
     $email_subject = "New form submissions";
 
     function problem($error)

@@ -65,6 +65,11 @@ body {
 }
 .skills {
 	flex-wrap: wrap;
+
+	.fab {
+		position: relative;
+		display: inline-block;
+	}
 }
 
 .section:not(:last-of-type) {
@@ -81,7 +86,7 @@ body {
 	}
 
 	// cambiar esto para que el color de la fuente se cambie a la ve que el fondo
-	span {
+	.fab {
 		height: 4rem;
 		width: 4rem;
 		font-size: 3rem;
@@ -89,9 +94,10 @@ body {
 		transition: all 1s ease;
 		//FIX: transition from top to bottom, why? and fix tooltip position
 		&:hover {
-			font-size: 4rem;
+			transform: scale(1.2);
 			color: $lightpink;
 		}
+
 		// &.skills {
 		// 	p {
 		// 		font-size: 0.8rem;
@@ -123,6 +129,23 @@ body {
 	// 	background-color: $color-orange;
 	// 	color: $color-blue-steel;
 	// }
+}
+#about {
+	.content {
+		display: flex;
+		flex-direction: row;
+		@media screen and (max-width: $bp-m) {
+			flex-direction: column;
+		}
+		.text {
+			width: 60%;
+			margin-right: 2rem;
+			@media screen and (max-width: $bp-m) {
+				width: 100%;
+				margin-right: 0rem;
+			}
+		}
+	}
 }
 
 footer {
@@ -162,5 +185,6 @@ footer {
 .profile-pic {
 	img {
 		border-radius: 50%;
+		box-shadow: 3px 2px 15px 0px rgba(0, 0, 0, 0.54);
 	}
 }
