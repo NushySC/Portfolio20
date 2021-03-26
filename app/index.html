@@ -69,7 +69,7 @@
 		></noscript>
 		<!-- End Google Tag Manager (noscript) -->
 
-		<header class="header section" data-bg="#c5d5">
+		<header class="header section" data-bg="#c5d5" data-text="#fff">
 			<h1 class="header__title">
 				<span class="header__title--main">Anuska Sampedro</span>
 				<span class="header__title--sub"
@@ -108,13 +108,25 @@
 				<li class="navbar__link">
 					<a href="#social">Social</a>
 				</li>
+				<li class="navbar__link">
+					<a href="" class="lang eng">EN</a>/<a
+						href=""
+						class="lang spa"
+						>ES</a
+					>
+				</li>
 			</ul>
 		</nav>
 
 		<main>
-			<div class="section" id="intro" data-bg="#c5fad5">
+			<div
+				class="section"
+				id="intro"
+				data-bg="#c5fad5"
+				data-text="#355070"
+			>
 				<div class="container">
-					<h2 class="container__title" data-text="#355070">Intro</h2>
+					<h2 class="container__title">Intro</h2>
 					<p class="container__text">
 						I would love to help your with your website, feel free
 						to get in touch!
@@ -148,7 +160,12 @@
 				</div>
 			</div>
 
-			<section class="section" id="skills" data-bg="#aa96da">
+			<section
+				class="section"
+				id="skills"
+				data-bg="#aa96da"
+				data-text="#df678c"
+			>
 				<div class="container">
 					<h2 class="container__title">My Skills</h2>
 					<div>
@@ -163,39 +180,21 @@
 								ducimus!
 							</p>
 							<div class="row justify-c skills">
+								<span class="fab fa-html5 tooltip-html"></span>
 								<span
-									class="fab fa-html5"
-									id="tooltip-html"
+									class="fab fa-css3-alt tooltip-css"
+								></span>
+								<span class="fab fa-js tooltip-js"></span>
+								<span
+									class="fab fa-bootstrap tooltip-boot"
 								></span>
 								<span
-									class="fab fa-css3-alt"
-									id="tooltip-css"
+									class="fab fa-angular tooltip-angular"
 								></span>
-								<span class="fab fa-js" id="tooltip-js"></span>
-								<span
-									class="fab fa-bootstrap"
-									id="tooltip-boot"
-								></span>
-								<span
-									class="fab fa-angular"
-									id="tooltip-angular"
-								></span>
-								<span
-									class="fab fa-vuejs"
-									id="tooltip-vue"
-								></span>
-								<span
-									class="fab fa-react"
-									id="tooltip-react"
-								></span>
-								<span
-									class="fab fa-sass"
-									id="tooltip-sass"
-								></span>
-								<span
-									class="fab fa-gulp"
-									id="tooltip-gulp"
-								></span>
+								<span class="fab fa-vuejs tooltip-vue"></span>
+								<span class="fab fa-react tooltip-react"></span>
+								<span class="fab fa-sass tooltip-sass"></span>
+								<span class="fab fa-gulp tooltip-gulp"></span>
 							</div>
 						</div>
 						<div class="ui">
@@ -210,13 +209,9 @@
 							</p>
 							<div class="row justify-c skills">
 								<span
-									class="fab fa-sketch"
-									id="tooltip-sketch"
+									class="fab fa-sketch tooltip-sketch"
 								></span>
-								<span
-									class="fab fa-figma"
-									id="tooltip-figma"
-								></span>
+								<span class="fab fa-figma tooltip-figma"></span>
 							</div>
 						</div>
 
@@ -232,12 +227,10 @@
 							</p>
 							<div class="row justify-c skills">
 								<span
-									class="fab fa-wordpress"
-									id="tooltip-wordpress"
+									class="fab fa-wordpress tooltip-wordpress"
 								></span>
 								<span
-									class="fab fa-shopify"
-									id="tooltip-shopify"
+									class="fab fa-shopify tooltip-shopify"
 								></span>
 							</div>
 						</div>
@@ -246,7 +239,12 @@
 					</div>
 				</div>
 			</section>
-			<section class="section" id="portfolio" data-bg="#f2efa5">
+			<section
+				class="section"
+				id="portfolio"
+				data-bg="#f2efa5"
+				data-text="#a6da"
+			>
 				<div class="container">
 					<h2 class="container__title">Portfolio</h2>
 					<div class="portfolio-cont">
@@ -429,7 +427,12 @@
 					</div>
 				</div>
 			</section>
-			<section class="section" id="about" data-bg="#cc313d">
+			<section
+				class="section"
+				id="about"
+				data-bg="#cc313d"
+				data-text="#f2efa5"
+			>
 				<div class="container">
 					<h2 class="container__title">About</h2>
 					<div class="content">
@@ -462,6 +465,7 @@
 						</div>
 						<figure class="profile-pic">
 							<img
+								class="profile-pic__img"
 								src="./assets/images/anuska_back.jpg"
 								alt="anuska_profile"
 							/>

@@ -12,15 +12,13 @@ window.onscroll = function () {
 };
 
 // CHANGES BACKGROUND WHEN SCROLLING
-//FIX: THE TEXT doest change
 
 window.sections = [...document.querySelectorAll('.section')];
-// window.texts = [...document.querySelectorAll('.container__title')];
 
 window.lastScrollTop = window.pageYOffset;
 
 document.body.style.background = window.sections[0].getAttribute('data-bg');
-// document.body.style.color = window.texts[0].getAttribute('data-color');
+document.body.style.color = window.sections[0].getAttribute('data-text');
 
 window.addEventListener('scroll', onScroll);
 
@@ -36,6 +34,7 @@ function onScroll() {
 
 		.find((section) => section.rect.bottom >= window.innerHeight * 0.5);
 	document.body.style.background = section.el.getAttribute('data-bg');
+	document.body.style.color = section.el.getAttribute('data-text');
 }
 
 //Responsive Navbar
@@ -46,3 +45,5 @@ const classToggle = () => {
 };
 
 document.querySelector('.toggle').addEventListener('click', classToggle);
+
+//Text on scroll
