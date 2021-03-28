@@ -12,14 +12,13 @@ body {
 	display: flex;
 	flex-direction: column;
 	transition: background 500ms ease-in-out;
-	background-color: #000; /* IE 8 */
+	// background-color: #000; /* IE 8 */
 }
 //TODO: change background color for explorer
 //TODO: add gradient or some animation, maybe full gradient because it can interract with showing navbar and full height first frame
 .header {
-	// background-color: $color-purplo;
-	color: $color-white;
-	background-color: cornflowerblue;
+	background-color: $color-yellow;
+	color: $color-pinky;
 	min-height: 50vh;
 	padding: 4rem 2rem;
 	@media screen and (max-width: 768px) {
@@ -31,9 +30,9 @@ body {
 		flex-direction: column;
 		justify-content: space-between;
 		&--main {
-			@include title-bold;
+			@include text-bold;
 			font-size: 10rem;
-			line-height: 8.5rem;
+			line-height: 10.5rem;
 			// opacity: 0.8;
 			text-align: right;
 			@media screen and (max-width: 768px) {
@@ -42,9 +41,10 @@ body {
 			}
 		}
 		&--sub {
-			@include title-regular;
+			@include text-regular;
 			display: block;
 			font-size: 3rem;
+			color: $color-black;
 			// line-height: -3rem;
 			text-align: right;
 			// letter-spacing: 0.3rem;
@@ -61,6 +61,25 @@ body {
 	position: relative;
 	display: inline-block;
 }
+
+.container--full {
+	width: 100vw;
+
+	.frontend.row {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.first {
+			width: 50%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 48px;
+			margin: 0 !important;
+		}
+	}
+}
 .section {
 	// color: $darkpurple;
 }
@@ -74,7 +93,7 @@ body {
 	// 	color: #333;
 	// }
 	// &[data-bg='#ef233c'] {
-	// 	color: $color-purplo;
+	// 	color: $color-pinky;
 	// }
 
 	// cambiar esto para que el color de la fuente se cambie a la ve que el fondo
@@ -86,7 +105,7 @@ body {
 		transition: all 2s ease;
 		&:hover {
 			// transform: scale(1.2);
-			color: $lightpink;
+			color: $color-pinky;
 		}
 
 		// &.skills {
@@ -104,12 +123,12 @@ body {
 	}
 
 	// &:nth-child(1) {
-	// 	// background-color: $color-pink;
-	// 	color: $color-purplo;
+	// 	// background-color: $color-pinky;
+	// 	color: $color-pinky:;
 	// 	// transition: all 3s ease;
 	// }
 	// &:nth-child(2) {
-	// 	// background-color: $color-purplo;
+	// 	// background-color: $color-pinky:;
 	// 	color: $color-pewter;
 	// }
 	// &:nth-child(3) {
@@ -140,8 +159,8 @@ body {
 }
 
 footer {
-	background-color: $color-purplo;
-	color: $color-pink;
+	background-color: $color-pinky;
+	color: $color-white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

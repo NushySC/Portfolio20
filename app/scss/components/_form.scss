@@ -47,7 +47,7 @@
 }
 
 .contact-form-control:focus {
-	border: 1px solid $lightpink;
+	border: 1px solid $color-pinky;
 }
 
 select.contact-form-control[size],
@@ -74,8 +74,8 @@ label.contact-form-label {
 	vertical-align: middle;
 	cursor: pointer;
 	color: #fff;
-	background-color: $lightpink;
-	border-color: $lightpink;
+	background-color: $color-pinky;
+	border-color: $color-pinky;
 	padding: 0.5rem 1rem;
 	font-size: 1rem;
 	border-radius: 0.3rem;
@@ -83,16 +83,16 @@ label.contact-form-label {
 		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 	&:hover {
 		color: #fff;
-		background-color: $darkpink;
-		border-color: $darkpink;
+		background-color: $color-pinky;
+		border-color: $color-pinky;
 		text-decoration: none;
 	}
 	&:focus,
 	&.focus {
 		outline: 0;
 		color: #fff;
-		background-color: $darkpink;
-		border-color: $darkpink;
+		background-color: $color-pinky;
+		border-color: $color-pinky;
 		box-shadow: 0 0 0 0.2rem rgba(255, 0, 119, 0.25);
 	}
 }

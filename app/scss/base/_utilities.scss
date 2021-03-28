@@ -20,6 +20,9 @@ $bp-xs: 325px;
 	display: flex;
 	flex-direction: column;
 }
+.fifty {
+	width: 50%;
+}
 .skills {
 	flex-wrap: wrap;
 
@@ -28,6 +31,7 @@ $bp-xs: 325px;
 		display: inline-block;
 	}
 }
+
 .container {
 	max-width: 1000px;
 	width: 55%;
@@ -44,11 +48,11 @@ $bp-xs: 325px;
 
 	&__title {
 		@include title-bold;
-		font-size: 6rem;
-		line-height: 5.5rem;
+		font-size: 6.5rem;
+		margin-bottom: 2rem;
 		@media screen and (max-width: 500px) {
 			font-size: 4rem;
-			line-height: 3.5rem;
+			// line-height: 3.5rem;
 		}
 	}
 
