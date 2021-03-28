@@ -71,5 +71,6 @@ $bp-xs: 325px;
 .skill {
 	@include text-regular;
 	font-size: 2.3rem;
-	margin-top: 2.5rem;
+	// margin-top: 2.5rem;
+	line-height: 6rem;
 }

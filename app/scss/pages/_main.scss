@@ -18,7 +18,7 @@ body {
 //TODO: change background color for explorer
 //TODO: add gradient or some animation, maybe full gradient because it can interract with showing navbar and full height first frame
 .header {
-	background-color: $color-yellow;
+	background-color: $color-black;
 	color: $color-pinky;
 	min-height: 50vh;
 	padding: 4rem 2rem;
@@ -31,9 +31,9 @@ body {
 		flex-direction: column;
 		justify-content: space-between;
 		&--main {
-			@include text-bold;
-			font-size: 10rem;
-			line-height: 10.5rem;
+			@include title-bold;
+			font-size: 8rem;
+			line-height: 9.5rem;
 			// opacity: 0.8;
 			text-align: right;
 			@media screen and (max-width: 768px) {
@@ -42,10 +42,10 @@ body {
 			}
 		}
 		&--sub {
-			@include text-regular;
+			@include title-regular;
 			display: block;
-			font-size: 3rem;
-			color: $color-black;
+			font-size: 2rem;
+			color: $color-white;
 			// line-height: -3rem;
 			text-align: right;
 			// letter-spacing: 0.3rem;
@@ -64,7 +64,7 @@ body {
 }
 
 .container--special {
-	width: 100vw;
+	max-width: 100vw;
 
 	// .frontend.row {
 	// 	display: flex;
@@ -97,16 +97,25 @@ body {
 	// 	color: $color-pinky;
 	// }
 
-	// cambiar esto para que el color de la fuente se cambie a la ve que el fondo
+	.bg__orange .fab {
+		color: $darkpink;
+	}
+	.bg__green .fab {
+		color: $color-red;
+	}
+	.bg__red .fab {
+		color: $color-mint;
+	}
 	.fab {
 		height: 3rem;
 		width: 3rem;
 		font-size: 3rem;
 		margin: 1rem;
 		transition: all 2s ease;
+
 		&:hover {
 			// transform: scale(1.2);
-			color: $color-pinky;
+			color: $color-white;
 		}
 
 		// &.skills {

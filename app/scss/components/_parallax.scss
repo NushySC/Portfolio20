@@ -47,6 +47,10 @@
 		float: right;
 	}
 
+	@media screen and (max-width: $bp-xl) {
+		width: 70%;
+		padding: 1rem;
+	}
 	@media screen and (max-width: $bp-m) {
 		width: 100%;
 		padding: 1rem;
