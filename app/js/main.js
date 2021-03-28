@@ -46,4 +46,18 @@ const classToggle = () => {
 
 document.querySelector('.toggle').addEventListener('click', classToggle);
 
-//Text on scroll
+// function splitScroll() {
+// 	const controller = new ScrollMagic.Controller();
+
+// 	new ScrollMagic.Scene({
+// 		duration: '200%',
+// 		triggerElement: 'titte of the skills section after layout changes',
+// 		triggerHook: 0,
+// 	})
+
+// 		.setPin('.skills title')
+// 		.addIndicators()
+// 		.addTo(controller);
+// }
+
+// splitScroll();
