@@ -6,7 +6,7 @@ window.onscroll = function () {
 	if (prevScrollpos > currentScrollPos) {
 		document.getElementById('navbar').style.top = '0';
 	} else {
-		document.getElementById('navbar').style.top = '-60px';
+		document.getElementById('navbar').style.top = '-50px';
 	}
 	prevScrollpos = currentScrollPos;
 };
@@ -32,7 +32,7 @@ function onScroll() {
 			return {el, rect};
 		})
 
-		.find((section) => section.rect.bottom >= window.innerHeight * 0.5);
+		.find((section) => section.rect.bottom >= window.innerHeight * 0.7);
 	document.body.style.background = section.el.getAttribute('data-bg');
 	document.body.style.color = section.el.getAttribute('data-text');
 }
