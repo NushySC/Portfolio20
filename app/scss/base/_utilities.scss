@@ -52,9 +52,9 @@ $bp-xs: 325px;
 	}
 
 	&__text {
-		@include text-regular;
-		font-size: 1.1rem;
-		line-height: 2.2rem;
+		@include title-regular;
+		font-size: 1.2rem;
+		line-height: 2.5rem;
 		margin: 1rem 0;
 	}
 	.me {
