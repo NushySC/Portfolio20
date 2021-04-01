@@ -1,15 +1,12 @@
-//Flip Mixin
-//TODO: change this colors
-
-$image-bg: #2266a5 !default;
-$figcaption-bg: #135796 !default;
-$figcaption-padding: 30px !default;
-$text-color: #ffffff !default;
-$border-color: #ffffff !default;
-$border-margin: 5px !default;
-$border-width: 4px !default;
-$transition-duration: 0.35s !default;
-$shift-distance: 10px !default;
+$image-bg: #2021228f;
+$figcaption-bg: #2021228f;
+$figcaption-padding: 30px;
+$text-color: #ffffff;
+$border-color: #ffffff;
+$border-margin: 5px;
+$border-width: 4px;
+$transition-duration: 0.35s;
+$shift-distance: 10px;
 
 @mixin fill($padding: 0) {
 	position: absolute;
@@ -39,9 +36,9 @@ $shift-distance: 10px !default;
 	}
 
 	figcaption {
-		@include fill;
 		background-color: $figcaption-bg;
 		padding: $figcaption-padding;
+		@include fill;
 		color: $text-color;
 
 		h1,
@@ -52,177 +49,24 @@ $shift-distance: 10px !default;
 		h6 {
 			color: $text-color;
 		}
-	}
-
-	a {
-		@include fill;
-		z-index: 1;
-	}
-}
-/* imghvr-flip-*
-   ----------------------------- */
-[class^='imghvr-flip-'],
-[class*=' imghvr-flip-'] {
-	perspective: 50em;
-
-	img {
-		backface-visibility: hidden;
-	}
-
-	figcaption {
-		opacity: 0;
-	}
-
-	&:hover {
-		> img {
-			opacity: 0;
+		h3 {
+			@include title-bold;
+			font-size: 1.6rem;
+			margin-bottom: 0.6rem;
 		}
-
-		figcaption {
-			opacity: 1;
-			transition-delay: $transition-duration * 0.4;
-		}
-	}
-}
-
-/* imghvr-flip-horiz
-   ----------------------------- */
-.imghvr-flip-horiz {
-	figcaption {
-		transform: rotateX(90deg);
-		transform-origin: 0% 50%;
-	}
-
-	&:hover {
-		img {
-			transform: rotateX(-180deg);
-		}
-
-		figcaption {
-			transform: rotateX(0deg);
-		}
-	}
-}
-
-/* imghvr-flip-vert
-   ----------------------------- */
-.imghvr-flip-vert {
-	figcaption {
-		transform: rotateY(90deg);
-		transform-origin: 50% 0%;
-	}
-
-	&:hover {
-		> img {
-			transform: rotateY(-180deg);
-		}
-
-		figcaption {
-			transform: rotateY(0deg);
-		}
-	}
-}
-
-/* imghvr-flip-diag-1
-   ----------------------------- */
-.imghvr-flip-diag-1 {
-	figcaption {
-		transform: rotate3d(1, -1, 0, 100deg);
-	}
-
-	&:hover {
-		> img {
-			transform: rotate3d(-1, 1, 0, 100deg);
-		}
-
-		figcaption {
-			transform: rotate3d(0, 0, 0, 0deg);
-		}
-	}
-}
-
-/* imghvr-flip-diag-2
-   ----------------------------- */
-.imghvr-flip-diag-2 {
-	figcaption {
-		transform: rotate3d(1, 1, 0, 100deg);
-	}
-
-	&:hover {
-		> img {
-			transform: rotate3d(-1, -1, 0, 100deg);
-		}
-
-		figcaption {
-			transform: rotate3d(0, 0, 0, 0deg);
-		}
-	}
-}
-
-$image-bg: tomato;
-$figcaption-bg: tomato;
-$figcaption-padding: 1rem;
-$text-color: #ffffff !default;
-$border-color: #ffffff !default;
-$border-margin: 0.3rem;
-$border-width: 4px !default;
-$transition-duration: 0.5s !default;
-$shift-distance: 10px !default;
-
-@mixin fill($padding: 0) {
-	position: absolute;
-	top: $padding;
-	bottom: $padding;
-	left: $padding;
-	right: $padding;
-}
-
-[class^='imghvr-'],
-[class*=' imghvr-'] {
-	position: relative;
-	display: inline-block;
-	margin: 0;
-	max-width: 100%;
-	background-color: $image-bg;
-	color: #fff;
-	overflow: hidden;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-	transform: translateZ(0);
-
-	> img {
-		vertical-align: top;
-		max-width: 100%;
-	}
-
-	figcaption {
-		@include fill;
-		background-color: $figcaption-bg;
-		padding: $figcaption-padding;
-		color: $text-color;
-		font-family: sans-serif;
-
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			color: $text-color;
+		h4 {
+			@include text-bold;
+			font-size: 0.9rem;
+			margin-bottom: 0.6rem;
 		}
 		h5 {
-			font-size: 2rem;
-		}
-		h6 {
-			font-size: 0.6rem;
-		}
-		p:nth-of-type(1) {
+			@include text-regular;
 			font-size: 0.8rem;
-			line-height: 1.3rem;
+			margin-bottom: 0.6rem;
 		}
 		p {
-			font-size: 0.7rem;
+			@include text-light;
+			font-size: 0.9rem;
 			line-height: 1.3rem;
 		}
 	}
@@ -247,4 +91,38 @@ $shift-distance: 10px !default;
 [class*=' imghvr-'] *:after {
 	box-sizing: border-box;
 	transition: all 0.35s ease;
+}
+
+//   @import "effects/_imghvr-reveal";
+
+[class^='imghvr-reveal-'],
+[class*=' imghvr-reveal-'] {
+	&:before {
+		@include fill;
+		content: '';
+		background-color: $figcaption-bg;
+	}
+
+	figcaption {
+		opacity: 0;
+	}
+
+	&:hover {
+		&:before {
+			transform: translate(0, 0);
+		}
+
+		figcaption {
+			opacity: 1;
+			transition-delay: $transition-duration * 0.6;
+		}
+	}
+}
+
+/* imghvr-reveal-up
+   ----------------------------- */
+.imghvr-reveal-up {
+	&:before {
+		transform: translateY(100%);
+	}
 }
