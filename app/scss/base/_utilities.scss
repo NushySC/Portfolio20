@@ -56,6 +56,11 @@ $bp-xs: 325px;
 		font-size: 1.2rem;
 		line-height: 2.5rem;
 		margin: 1rem 0;
+		&--skill {
+			@include text-regular;
+			font-size: 1rem;
+			line-height: 2rem;
+		}
 	}
 	.me {
 		border-radius: 50%;
@@ -64,8 +69,8 @@ $bp-xs: 325px;
 }
 
 .skill {
-	@include text-regular;
-	font-size: 2.3rem;
+	@include text-bold;
+	font-size: 2.2rem;
 	// margin-top: 2.5rem;
 	line-height: 6rem;
 }
