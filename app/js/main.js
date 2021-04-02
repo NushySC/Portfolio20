@@ -46,18 +46,49 @@ const classToggle = () => {
 
 document.querySelector('.toggle').addEventListener('click', classToggle);
 
-// function splitScroll() {
-// 	const controller = new ScrollMagic.Controller();
+// GSAP
 
-// 	new ScrollMagic.Scene({
-// 		duration: '200%',
-// 		triggerElement: 'titte of the skills section after layout changes',
-// 		triggerHook: 0,
-// 	})
+const polygon = document.querySelectorAll('.polygon');
+const path = document.querySelectorAll('.path');
 
-// 		.setPin('.skills title')
-// 		.addIndicators()
-// 		.addTo(controller);
-// }
+// gsap.from(path, 1, {
+// 	scale: 0,
+// 	y: 600,
+// 	x: 1000,
+// 	ease: Bounce.easeIn,
+// 	stagger: {
+// 		from: 'edges',
+// 		amount: 1,
+// 		yoyo: true,
+// 	},
+// });
 
-// splitScroll();
+gsap.from(polygon, 1, {
+	scale: 20,
+	y: 900,
+	x: 300,
+	ease: true,
+	stagger: {
+		opacity: 1,
+		each: 1,
+		from: 'edges',
+		amount: 1,
+		yoyo: true,
+	},
+});
+
+gsap.set(path, {
+	opacity: 1,
+});
+gsap.from(path, 2, {
+	scale: 30,
+	y: -600,
+	x: -500,
+	ease: true,
+	stagger: {
+		each: 1,
+		from: 'edges',
+		amount: 1,
+		yoyo: true,
+	},
+});

@@ -18,11 +18,16 @@ body {
 }
 //TODO: change background color for explorer
 //TODO: add gradient or some animation, maybe full gradient because it can interract with showing navbar and full height first frame
+
+.name {
+	margin: 0 auto;
+}
 .header {
 	background-color: $color-black;
 	color: $color-pinky;
 	min-height: 50vh;
 	padding: 4rem 2rem;
+	text-align: center;
 	@media screen and (max-width: 768px) {
 		min-height: auto;
 		padding: 4rem 1rem 0rem 1rem;
