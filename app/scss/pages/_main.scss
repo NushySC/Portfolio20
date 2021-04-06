@@ -12,53 +12,79 @@ body {
 body {
 	display: flex;
 	flex-direction: column;
-	background-color: #1d1d1d;
-	color: #fff; /* IE 8 */
+	background-color: #232323;
+	color: #ebebd9; /* IE 8 */
 	transition: background-color 3s;
 }
 //TODO: change background color for explorer
 //TODO: add gradient or some animation, maybe full gradient because it can interract with showing navbar and full height first frame
 
-.name {
-	margin: 0 auto;
-}
 .header {
+	background-image: linear-gradient(#e7e7e73a 2px, transparent 2px),
+		linear-gradient(to right, #e7e7e73a 2px, #e5e5f700 2px);
+	background-size: 1rem 1rem;
 	background-color: $color-black;
-	color: $color-pinky;
 	min-height: 50vh;
-	padding: 4rem 2rem;
+	padding: 5rem 2rem 2rem 2rem;
 	text-align: center;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: $bp-m) {
 		min-height: auto;
-		padding: 4rem 1rem 0rem 1rem;
+		padding: 5rem 1rem 2rem 1rem;
 	}
 	&__title {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		align-items: center;
 		&--main {
 			@include title-bold;
 			font-size: 8rem;
-			line-height: 9.5rem;
-			// opacity: 0.8;
+			// line-height: 9.5rem;
 			text-align: right;
-			@media screen and (max-width: 768px) {
-				font-size: 2rem;
-				line-height: 2rem;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			span:nth-of-type(1) {
+				display: block;
+				background-color: #ca4246;
+				background-image: $linear-yellow;
+				background-size: 100%;
+				background-repeat: repeat;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				margin-right: 1rem;
+			}
+			span:nth-of-type(2) {
+				display: block;
+				background-color: #ca4246;
+				background-image: $linear-pink;
+				background-size: 100%;
+				background-repeat: repeat;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+			@media screen and (max-width: $bp-m) {
+				font-size: 3rem;
+				flex-direction: column;
 			}
 		}
 		&--sub {
 			@include title-regular;
-			display: block;
 			font-size: 2rem;
 			color: $color-white;
-			// line-height: -3rem;
-			text-align: right;
-			// letter-spacing: 0.3rem;
-			margin-top: 1rem;
-			@media screen and (max-width: 768px) {
-				font-size: 2rem;
-				line-height: 2rem;
+			background-color: $color-black;
+			padding: 1rem 2rem;
+			width: max-content;
+			text-align: center;
+			margin-top: 2rem;
+			max-width: 100%;
+
+			@media screen and (max-width: $bp-m) {
+				font-size: 1rem;
+				line-height: 1rem;
+				margin-top: 1rem;
 			}
 		}
 	}

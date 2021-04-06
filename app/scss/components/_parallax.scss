@@ -15,16 +15,16 @@
 // }
 
 .parallax .bg__green {
-	box-shadow: inset 0 0 1em #1d1d1d;
+	box-shadow: inset 0 0 1em #232323;
 	margin: 0;
 	background-image: url('/assets/images/green.svg');
 }
 .parallax .bg__red {
-	box-shadow: inset 0 0 1em #1d1d1d;
+	box-shadow: inset 0 0 1em #232323;
 	background-image: url('/assets/images/red.svg');
 }
 .parallax .bg__orange {
-	box-shadow: inset 0 0 1em #1d1d1d;
+	box-shadow: inset 0 0 1em #232323;
 	background-image: url('/assets/images/orange.svg');
 }
 .parallax .capture {
@@ -34,9 +34,9 @@
 	padding: 2.5rem 4.5rem;
 	margin: 0;
 	// text-indent: 0;
-	background: #1d1d1d;
-	box-shadow: 0 1px 0.125em #1d1d1d;
-	color: rgb(255, 255, 255);
+	background: #232323;
+	box-shadow: 0 1px 0.125em #232323;
+	color: #ebebd9;
 	&.frontend {
 		float: right;
 	}
