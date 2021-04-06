@@ -67,6 +67,10 @@ $bp-xs: 325px;
 		border-radius: 50%;
 		filter: grayscale(1);
 	}
+
+	strong {
+		@include text-bold;
+	}
 }
 
 .skill {
