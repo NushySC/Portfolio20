@@ -47,48 +47,51 @@ const classToggle = () => {
 document.querySelector('.toggle').addEventListener('click', classToggle);
 
 // GSAP
+const nombre = document.getElementsByClassName('name');
+const lastName = document.getElementsByClassName('lastname');
+const tl = new gsap.timeline({duration: 4, repeat: 0});
 
-const polygon = document.querySelectorAll('.polygon');
-const path = document.querySelectorAll('.path');
+tl.from(nombre, 3, {x: 900, opacity: 0, scale: 4.5}, 1)
+	.from(lastName, 3, {x: -900, opacity: 0, scale: 4.5}, 1)
+	// .set(lastName, {x: 300, y: -150, opacity: 0})
 
-// gsap.from(path, 1, {
-// 	scale: 0,
-// 	y: 600,
-// 	x: 1000,
-// 	ease: Bounce.easeIn,
+	.to(nombre, 3, {x: -500, opacity: 0.5}, 2)
+	.to(lastName, 3, {x: -900, opacity: 1}, 2)
+	.to(nombre, 3, {x: 0, opacity: 1}, 2)
+	.to(lastName, 3, {x: 0, opacity: 1, scale: 1}, 2);
+
+// gsap.from(nombre, {y: -300, scale: 3});
+// gsap.to(nombre, {duration: 4, y: 100, scale: 1});
+
+// const polygon = document.querySelectorAll('.polygon');
+// const path = document.querySelectorAll('.path');
+
+// gsap.from(polygon, 1, {
+// 	scale: 20,
+// 	y: 900,
+// 	x: 300,
+// 	ease: true,
 // 	stagger: {
+// 		opacity: 1,
+// 		each: 1,
 // 		from: 'edges',
 // 		amount: 1,
 // 		yoyo: true,
 // 	},
 // });
 
-gsap.from(polygon, 1, {
-	scale: 20,
-	y: 900,
-	x: 300,
-	ease: true,
-	stagger: {
-		opacity: 1,
-		each: 1,
-		from: 'edges',
-		amount: 1,
-		yoyo: true,
-	},
-});
-
-gsap.set(path, {
-	opacity: 1,
-});
-gsap.from(path, 2, {
-	scale: 30,
-	y: -600,
-	x: -500,
-	ease: true,
-	stagger: {
-		each: 1,
-		from: 'edges',
-		amount: 1,
-		yoyo: true,
-	},
-});
+// gsap.set(path, {
+// 	opacity: 1,
+// });
+// gsap.from(path, 2, {
+// 	scale: 30,
+// 	y: -600,
+// 	x: -500,
+// 	ease: true,
+// 	stagger: {
+// 		each: 1,
+// 		from: 'edges',
+// 		amount: 1,
+// 		yoyo: true,
+// 	},
+// });
