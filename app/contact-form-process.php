@@ -69,7 +69,21 @@ if (isset($_POST['Email'])) {
 
     <!-- include your success message below -->
 
-    Thank you for contacting us. We will be in touch with you very soon.
+ <div class="thanks" style="	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #000;
+	color: #ccffcc;
+	width: 100%;
+	height: 100%;
+    font-family: sans-serif">
+       <p class="whatever" style=";
+        font-size: 3.5rem;
+        line-height: 1.3;
+        font-weight: bold" > Thank you for contacting us. <br />We will be in touch with you very soon.</p>
+        <a href="http://www.anuskasampedro.com/" style="color: #fff;font-weight: bold; text-decoration: none "> Back</a>
+ </div>
 
 <?php
 }
