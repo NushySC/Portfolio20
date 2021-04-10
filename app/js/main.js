@@ -49,16 +49,16 @@ document.querySelector('.toggle').addEventListener('click', classToggle);
 // GSAP
 const nombre = document.getElementsByClassName('name');
 const lastName = document.getElementsByClassName('lastname');
-const tl = new gsap.timeline({duration: 4, repeat: 0});
+const tl = new gsap.timeline({duration: 3, repeat: 0});
 
-tl.from(nombre, 3, {x: 900, opacity: 0, scale: 4.5}, 1)
-	.from(lastName, 3, {x: -900, opacity: 0, scale: 4.5}, 1)
+tl.from(nombre, 2, {x: 700, opacity: 0, scale: 4.5}, 0)
+	.from(lastName, 2, {x: -700, opacity: 0, scale: 4.5}, 0)
 	// .set(lastName, {x: 300, y: -150, opacity: 0})
 
-	.to(nombre, 3, {x: -500, opacity: 0.5}, 2)
-	.to(lastName, 3, {x: -900, opacity: 1}, 2)
-	.to(nombre, 3, {x: 0, opacity: 1}, 2)
-	.to(lastName, 3, {x: 0, opacity: 1, scale: 1}, 2);
+	.to(nombre, 2, {x: -500, opacity: 0.5}, 0)
+	.to(lastName, 2, {x: -900, opacity: 1}, 0)
+	.to(nombre, 2, {x: 0, opacity: 1}, 0)
+	.to(lastName, 2, {x: 0, opacity: 1, scale: 1}, 0);
 
 // gsap.from(nombre, {y: -300, scale: 3});
 // gsap.to(nombre, {duration: 4, y: 100, scale: 1});
