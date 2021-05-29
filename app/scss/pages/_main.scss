@@ -20,11 +20,10 @@ body {
 //TODO: add gradient or some animation, maybe full gradient because it can interract with showing navbar and full height first frame
 
 .header {
-	background-image: linear-gradient(#e7e7e73a 2px, transparent 2px),
-		linear-gradient(to right, #e7e7e73a 2px, #e5e5f700 2px);
+	background-image: linear-gradient(#e7e7e73a 2px, transparent 2px), linear-gradient(to right, #e7e7e73a 2px, #e5e5f700 2px);
 	background-size: 1rem 1rem;
 	background-color: $color-black;
-	min-height: 50vh;
+	min-height: 30vh;
 	padding: 5rem 2rem 2rem 2rem;
 	text-align: center;
 	@media screen and (max-width: $bp-m) {
